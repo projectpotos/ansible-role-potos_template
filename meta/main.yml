@@ -1,0 +1,19 @@
+---
+
+galaxy_info:
+  author: Project Potos
+  description: ole to use as template for new roles of Potos Linux Clients.
+  company: Project Potos
+  role_name: potos_wallpaper
+  namespace: projectpotos
+  license: GPL-3.0-only
+  min_ansible_version: '2.12'
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+  galaxy_tags:
+    - potos
+    - template
+
+dependencies: []

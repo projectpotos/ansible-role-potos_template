@@ -1,0 +1,7 @@
+---
+
+# Example variable
+potos_template_example_var: 'hello world!'
+
+# List of items used for action xyz
+potos_template_example_list: []

@@ -1,0 +1,14 @@
+---
+
+- name: Verify
+  hosts: all
+  gather_facts: no
+
+  tasks:
+  - name: check if template has been applied
+    ansible.builtin.stat:
+      path: "/potos.example"
+    register: out
+    changed_when: false
+    failed_when:
+      - not out.stat.exists

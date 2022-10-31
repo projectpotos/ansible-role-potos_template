@@ -1,0 +1,19 @@
+---
+
+argument_specs:
+  main:
+    short_description: Role to use as template for new roles of Potos Linux Clients.
+    options:
+      potos_template_example_var:
+        description:
+          - Example variable
+        type: str
+        required: no
+        default: 'hello world!'
+      potos_template_example_list:
+        description:
+          - List of items used for action xyz
+        type: list
+        elements: str
+        required: no
+        default: []
