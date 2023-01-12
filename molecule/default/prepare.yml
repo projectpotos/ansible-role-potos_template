@@ -5,8 +5,8 @@
   gather_facts: yes
 
   tasks:
-  # Update the apt cache as it's potentialy outdated in the container
-  - name: update apt
-    ansible.builtin.shell:  # noqa: command-instead-of-module
-      cmd: 'apt-get update && apt-get upgrade -y'
-    when: ansible_distribution == 'Ubuntu'
+    # Update the apt cache as it's potentialy outdated in the container
+    - name: update apt
+      ansible.builtin.shell:  # noqa: command-instead-of-module
+        cmd: 'apt-get update && apt-get upgrade -y'
+      when: ansible_distribution == 'Ubuntu'
